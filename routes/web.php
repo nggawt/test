@@ -12,9 +12,11 @@
 */
 
 Route::get('/', function () {
-    //return view('welcome');
+    //return view('dashboard.dashboard');
     /**
      * undocumented constant
      **/
     //dd(header('contant-type'));
 });
+Route::get('shope/search','ProductConroller@search');
+Route::resource('shope','ProductConroller');
